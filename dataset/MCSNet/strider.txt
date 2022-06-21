@@ -1,0 +1,6 @@
+Strider
+Human form of the Strider mob added in the Minecraft 1.16 Nether Update. 
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A hostile creature from minecraft.
+A common monster found in minecraft.

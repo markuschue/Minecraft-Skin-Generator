@@ -1,0 +1,3 @@
+A minecraft zombie.
+A classic minecraft monster with green skin.
+A hostile creature from minecraft called zombie.

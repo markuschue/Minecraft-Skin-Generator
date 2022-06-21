@@ -1,0 +1,6 @@
+Snowman
+A classic snowman complete with hat and red & green scarf. 
+
+A human-shaped object.
+A personified object.
+An object.

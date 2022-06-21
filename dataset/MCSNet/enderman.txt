@@ -1,0 +1,7 @@
+Enderman
+Mob added in Minecraft 1.8.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+An ender creature.
+A minecraft black monster with bright purple eyes.
+A minecraft hostile creature from the End dimension.

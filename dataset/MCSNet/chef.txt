@@ -1,0 +1,7 @@
+Chef
+Friendly chef complete with moustache and red apron. 
+A person.
+A regular human.
+A boy.
+A man.
+A regular guy.

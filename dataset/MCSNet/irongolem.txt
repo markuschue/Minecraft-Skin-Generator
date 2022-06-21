@@ -1,0 +1,6 @@
+Iron Golem
+Smaller version of the Iron Golem mob that protects NPC villages.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A hostile creature from minecraft.
+A common monster found in minecraft.

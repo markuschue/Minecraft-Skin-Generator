@@ -1,0 +1,6 @@
+Redstone Bot
+Robot built entirely from scrapped redstone components. 
+
+A human-shaped object.
+A personified object.
+An object.

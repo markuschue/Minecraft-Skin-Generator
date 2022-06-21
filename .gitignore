@@ -1,0 +1,6 @@
+discarded/
+outputs/*
+wandb/
+dataset/*Backup
+libs/viewer/node_modules/
+models/*

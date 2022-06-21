@@ -1,0 +1,6 @@
+Locust
+Superhero based on the insect.
+A fantastic character.
+Lives in a fantasy world.
+A made-up super hero.
+A fantastic super hero.

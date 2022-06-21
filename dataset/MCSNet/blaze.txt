@@ -1,0 +1,7 @@
+Blaze
+Human version of the Blaze nether mob.
+A yellow creature resembling fire with darker spots in its shoulders and in the bottom of its head.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A hostile creature from minecraft.
+A common monster found in minecraft.

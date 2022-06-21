@@ -1,0 +1,6 @@
+Missing Texture Steve
+Minecraft Steve with a missing texture issue.
+
+A human-shaped object.
+A personified object.
+An object.

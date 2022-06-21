@@ -1,0 +1,2 @@
+Mage
+A hooded mage.

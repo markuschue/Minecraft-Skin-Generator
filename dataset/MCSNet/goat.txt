@@ -1,0 +1,6 @@
+Goat
+A neutral mob that performs high jumps on mountain biomes, added in the Caves & Cliffs update.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A minecraft animal.
+A common animal found in minecraft.

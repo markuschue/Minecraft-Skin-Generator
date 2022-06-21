@@ -1,0 +1,2 @@
+Wandering Player
+A player with a wandering trader scarf.

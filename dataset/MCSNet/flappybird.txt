@@ -1,0 +1,5 @@
+Flappy Bird
+Mascot from the mobile game Flappy Birds. A yellow bird with big orange beak and big eyes on the side of its head.
+A character from a videogame.
+Game character.
+A fantastic creature from a videogame.

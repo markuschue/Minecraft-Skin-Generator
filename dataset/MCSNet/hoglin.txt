@@ -1,0 +1,6 @@
+Hoglin
+A boar-like hostile mob that was added in the Nether Update.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A hostile creature from minecraft.
+A common monster found in minecraft.

@@ -1,0 +1,6 @@
+Glow Squid
+A luminescent version of the squid mob, added in the Caves & Cliffs update.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A minecraft animal.
+A common animal found in minecraft.

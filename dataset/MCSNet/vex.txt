@@ -1,0 +1,6 @@
+Vex
+Flying hostile mob added to Minecraft in version 1.11. 
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A hostile creature from minecraft.
+A common monster found in minecraft.

@@ -1,0 +1,6 @@
+Totem of Undying
+Small golden statue that when held can save the player from death. 
+
+A human-shaped object.
+A personified object.
+An object.

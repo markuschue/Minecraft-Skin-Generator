@@ -1,0 +1,6 @@
+Wither
+Human form of the Wither boss mob that shoots explosive skulls. 
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A hostile creature from minecraft.
+A common monster found in minecraft.

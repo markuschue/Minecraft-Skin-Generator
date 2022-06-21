@@ -1,0 +1,2 @@
+Glass Block
+The default Minecraft skin with a glass block helmet.

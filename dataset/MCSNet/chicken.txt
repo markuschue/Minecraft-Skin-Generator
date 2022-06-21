@@ -1,0 +1,6 @@
+Chicken
+Human version of the Minecraft chicken mob. A white creature with yellow beak, yellow feet and a red crest on the top of his head.
+A Minecraft mob.
+A creature from the videogame Minecraft.
+A minecraft animal.
+A common animal found in minecraft.

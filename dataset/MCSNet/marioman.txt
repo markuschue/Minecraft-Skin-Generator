@@ -1,0 +1,5 @@
+Mario Man
+Objects from the Mario games in human form. 
+A character from a videogame.
+Game character.
+A fantastic creature from a videogame.

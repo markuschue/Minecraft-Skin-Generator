@@ -1,0 +1,14 @@
+.offscreen-skin {
+  transition: transform .2s;
+}
+
+.offscreen-skin:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#title {
+  background-color: #7240bb;
+  font-weight: bold;
+  color: white;
+}

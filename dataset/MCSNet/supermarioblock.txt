@@ -1,0 +1,6 @@
+Super Mario Block
+A skin made out of blocks from Super Mario.
+
+A human-shaped object.
+A personified object.
+An object.
