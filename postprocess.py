@@ -63,20 +63,20 @@ def setBinaryTransparency(skin):
       else:
         skin[y, x][3] = 0
 
-def postprocess(skin_dir, save_dir = './app/skins/'):
+def postprocess(skin_dir):
   """
   Main function, calls the other functions to postprocess the skins in the specified folder.
   """
   print("Postprocessing files in " + skin_dir)
   for file in os.listdir(skin_dir):
     if file.endswith('.png'):
-      skin = cv2.imread(skin_dir + file, cv2.IMREAD_UNCHANGED)
+      skin = cv2.imread(skin_dir + '/' + file, cv2.IMREAD_UNCHANGED)
       # Postprocessing operations
       clearWhiteZones(skin)
       removeBodyTransparency(skin)
       setBinaryTransparency(skin)
       # Save the skin
-      cv2.imwrite(save_dir + file, skin)
+      cv2.imwrite(skin_dir + '/' + file, skin)
 
 if __name__ == '__main__':
   if len(sys.argv) == 1:

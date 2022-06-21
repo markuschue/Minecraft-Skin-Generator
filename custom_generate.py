@@ -18,7 +18,6 @@ from dalle_pytorch.tokenizer import tokenizer
 
 # Defining constants
 IMAGE_NUM = 64
-DALLE_PATH = './models/dalle.pt'
 OUTPUT_DIR = './outputs'
 TOP_K_FILTER_THRESHOLD = 0.9
 BATCH_SIZE = 4
@@ -30,13 +29,14 @@ def exists(val):
   """
   return val is not None
 
-def generate(text):
+def generate(text, dalle_path):
   """
   Main function for image generation.
   @param text: text prompt
+  @returns outputs_dir: directory of generated images
   """
   # Load DALL-E
-  dalle_path = Path(DALLE_PATH)
+  dalle_path = Path(dalle_path)
   assert dalle_path.exists(), 'trained DALL-E must exist'
 
   load_obj = torch.load(str(dalle_path))
@@ -57,28 +57,27 @@ def generate(text):
 
   # Generate images
   image_size = vae.image_size
-  texts = text.split('|')
 
-  for j, text in tqdm(enumerate(texts)):
-    text_tokens = tokenizer.tokenize([text], dalle.text_seq_len).cuda()
-    text_tokens = repeat(text_tokens, '() n -> b n', b = IMAGE_NUM)
+  text_tokens = tokenizer.tokenize([text], dalle.text_seq_len).cuda()
+  text_tokens = repeat(text_tokens, '() n -> b n', b = IMAGE_NUM)
 
-    outputs = []
+  outputs = []
 
-    for text_chunk in tqdm(text_tokens.split(BATCH_SIZE), desc = f'Generating images for - {text}'):
-      output = dalle.generate_images(text_chunk, filter_thres = TOP_K_FILTER_THRESHOLD)
-      outputs.append(output)
+  for text_chunk in tqdm(text_tokens.split(BATCH_SIZE), desc = f'Generating images for - {text}'):
+    output = dalle.generate_images(text_chunk, filter_thres = TOP_K_FILTER_THRESHOLD)
+    outputs.append(output)
 
-    outputs = torch.cat(outputs)
+  outputs = torch.cat(outputs)
 
-    # Save all images
-    file_name = text 
-    outputs_dir = Path(OUTPUT_DIR) / file_name.replace(' ', '_')[:(100)]
-    outputs_dir.mkdir(parents = True, exist_ok = True)
+  # Save all images
+  file_name = text 
+  outputs_dir = Path(OUTPUT_DIR) / file_name.replace(' ', '_')[:(100)]
+  outputs_dir.mkdir(parents = True, exist_ok = True)
 
-    for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
-      save_image(image, outputs_dir / f'{i}.png', normalize=True)
-      with open(outputs_dir / 'caption.txt', 'w') as f:
-        f.write(file_name)
+  for i, image in tqdm(enumerate(outputs), desc = 'saving images'):
+    save_image(image, outputs_dir / f'{i}.png', normalize=True)
+    with open(outputs_dir / 'caption.txt', 'w') as f:
+      f.write(file_name)
 
-    print(f'created {IMAGE_NUM} images at "{str(outputs_dir)}"')
+  print(f'created {IMAGE_NUM} images at "{str(outputs_dir)}"')
+  return './' + str(outputs_dir)
