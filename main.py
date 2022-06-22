@@ -21,10 +21,10 @@ postprocess(output_dir)
 # Copying images to the viewer and open viewer app
 if not args.no_viewer:
   viewSkinPath = './libs/viewer/skins/'
-  for file in viewSkinPath:
+  for file in os.listdir(viewSkinPath):
     os.remove(viewSkinPath + file)
   for file in os.listdir(output_dir):
     shutil.copy(output_dir + '/' + file, viewSkinPath)
 
-  run()
   webbrowser.open('http://localhost:8080/libs/viewer/source/', new = 2)
+  run()

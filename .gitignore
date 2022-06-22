@@ -4,3 +4,4 @@ wandb/
 dataset/*Backup
 libs/viewer/node_modules/
 models/*
+__pycache__/

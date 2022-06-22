@@ -15,6 +15,7 @@ def run():
     '.jpg': 'image/jpg',
     '.svg':	'image/svg+xml',
     '.css':	'text/css',
+    '.bundle.js':	'application/x-javascript',
     '.js':	'application/x-javascript',
     '': 'application/octet-stream', # Default
   }
