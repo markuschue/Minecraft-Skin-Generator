@@ -2,6 +2,7 @@ discarded/
 outputs/*
 wandb/
 dataset/*Backup
-libs/viewer/node_modules/
+viewer/node_modules/
+viewer/__pycache__/
 models/*
 __pycache__/

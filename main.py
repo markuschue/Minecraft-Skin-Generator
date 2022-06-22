@@ -1,9 +1,9 @@
 # Main file that generates the prompted skins, postprocesses them, and
 # runs the viewer app.
 
-from custom_generate import generate
+from generate import generate
 from postprocess import postprocess
-from libs.viewer.app import run
+from viewer.app import run
 import argparse, webbrowser, os, shutil
 
 
@@ -20,11 +20,11 @@ postprocess(output_dir)
 
 # Copying images to the viewer and open viewer app
 if not args.no_viewer:
-  viewSkinPath = './libs/viewer/skins/'
+  viewSkinPath = './viewer/skins/'
   for file in os.listdir(viewSkinPath):
     os.remove(viewSkinPath + file)
   for file in os.listdir(output_dir):
     shutil.copy(output_dir + '/' + file, viewSkinPath)
 
-  webbrowser.open('http://localhost:8080/libs/viewer/source/', new = 2)
+  webbrowser.open('http://localhost:8080/viewer/source/', new = 2)
   run()
