@@ -1,7 +1,6 @@
 # Simple script that reads the captions for each category and applies them to
 # the corresponding images from that category in the dataset.
 import os
-import cv2
 
 data_dir = './dataset/MCSNetVAE/full_body/'
 for cat in os.listdir(data_dir):

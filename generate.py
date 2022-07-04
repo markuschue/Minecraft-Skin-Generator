@@ -9,8 +9,7 @@ import torch
 from einops import repeat
 
 # vision imports
-from PIL import Image
-from torchvision.utils import make_grid, save_image
+from torchvision.utils import save_image
 
 # dalle related classes and utils
 from dalle_pytorch import DiscreteVAE, DALLE
@@ -56,8 +55,6 @@ def generate(text, dalle_path):
   dalle.load_state_dict(weights)
 
   # Generate images
-  image_size = vae.image_size
-
   text_tokens = tokenizer.tokenize([text], dalle.text_seq_len).cuda()
   text_tokens = repeat(text_tokens, '() n -> b n', b = IMAGE_NUM)
 

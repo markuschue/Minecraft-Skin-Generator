@@ -66,6 +66,7 @@ def setBinaryTransparency(skin):
 def postprocess(skin_dir):
   """
   Main function, calls the other functions to postprocess the skins in the specified folder.
+  @param skin_dir: The directory containing the skins to be postprocessed (they will be saved there).
   """
   print("Postprocessing files in " + skin_dir)
   for file in os.listdir(skin_dir):
@@ -79,10 +80,8 @@ def postprocess(skin_dir):
       cv2.imwrite(skin_dir + '/' + file, skin)
 
 if __name__ == '__main__':
-  if len(sys.argv) == 1:
+  if len(sys.argv) == 2:
     postprocess(sys.argv[1])
-  elif len(sys.argv) == 2:
-    postprocess(sys.argv[1], sys.argv[2])
   else:
     print("Incorrect number of arguments.")
     sys.exit(1)

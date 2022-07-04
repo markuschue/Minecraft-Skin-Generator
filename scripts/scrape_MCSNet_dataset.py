@@ -2,7 +2,6 @@
 # skins, and save them along with its description as a .txt file which will work
 # as captions for the dalle-pytorch library.
 
-from tkinter.tix import MAIN
 from aiohttp import request
 from bs4 import BeautifulSoup
 import requests

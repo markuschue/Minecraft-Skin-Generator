@@ -6,3 +6,4 @@ viewer/node_modules/
 viewer/__pycache__/
 models/*
 __pycache__/
+viewer/skins/*

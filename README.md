@@ -8,11 +8,12 @@ The dataset is stored in the `dataset/` folder and it contains two versions of t
 * MCSNet: A dataset of pairs of Minecraft skins and its corresponding captions.
 * MCSNetVAE: The same skins as MCSNet, but separated into categories for the VAE training. Each category has its own caption, which was used to add more captions more automatically to the MCSNet dataset via a script.
 
-This skins are basically texture images for Minecraft players and are mapped the following way:
+This skins are basically texture images for Minecraft players and are mapped the following way:  
+
 ![](resources/template.png)
 
 The second layer are optional fields for each body part, and as such can be transparent or opaque.
-Here's an example of a Minecraft skin with all of the body parts (they are mandatory) and some optional second layers:
+Here's an example of a Minecraft skin with all of the body parts (they are mandatory) and some optional second layers:  
 ![](dataset/MCSNet/50sgangster.png)
 
 ## Model
@@ -57,3 +58,4 @@ optional arguments:
 ```
 
 This script will generate the skins according to the input text, postprocess them and open the viewer app in case `no_viewer` is not set.
+Keep in mind that, in order to generate the skins, at least the DALLE model must be downloaded from [Google Drive](https://drive.google.com/file/d/19DTefjguy_OVN98J-e6okLWxCdc5C9Ic/view?usp=sharing) (or you can use your own DALLE model).
